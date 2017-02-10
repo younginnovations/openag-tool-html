@@ -19,9 +19,3 @@ header {
 .text--light {
   color: rgba($base-background,0.7);
 }
-
-@media all and (min-width: 900px) {
-  .container {
-    width: 832px;
-  }
-}
