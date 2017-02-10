@@ -1,0 +1,53 @@
+// Breakpoints
+$small-screen: 480px;
+$medium-screen: 768px;
+$large-screen: 1200px;
+$extra-large-screen: 1600px;
+
+//Color-palette
+$black: #66615B;
+$grey: #ccc;
+$light-grey: #d4d4d4;
+$white: #fff;
+$yellow: #ff0;
+$green: #8bc34a;
+$blue: #29d2e4;
+$orange: #f87d09;
+$dark-pink: #e91e63;
+$purple: #9c27b0;
+$light-purple: #efedff;
+
+//Custom-color
+$dark-blue: #073B4C;
+$light-blue: #118AB2;
+$bright-green: #2CE7A3;
+$golden-yellow: #FFD166;
+$rose-pink: #EF476F;
+
+// Base-colors
+$base-color: $dark-blue;
+$brand-color: $blue;
+$secondary-color: $grey;
+$text-color: $base-color;
+$link-color: $light-blue;
+
+//Body
+$base-background: $white;
+
+//Buttons
+//Buttons-Types
+$button-primary-bg-color: $black;
+$button-info-bg-color: $blue;
+$button-danger-bg-color: $dark-pink;
+$button-warning-bg-color: $orange;
+$button-success-bg-color: $green;
+
+//Buttons-Size
+$button-padding-vertical: 10px;
+$button-padding-horizontal: 15px;
+
+// Typography
+$base-font-family: "Open Sans",san-serif;
+
+
+
