@@ -3,6 +3,11 @@ header {
   background-color: #4AD4A1;
   height: 380px;
   position: relative;
+
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .header__content {
@@ -18,4 +23,13 @@ header {
 
 .text--light {
   color: rgba($base-background,0.7);
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    h1 {
+      font-size: 50px;
+      line-height: 58px;
+    }
+  }
 }
