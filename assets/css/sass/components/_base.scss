@@ -11,7 +11,7 @@ html, body {
 body {
   background-color: $base-background;
   color: $base-color;
-  font: normal small-caps normal 14px/22px Helvetica, sans-serif;
+  font: 500 14px/22px $base-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

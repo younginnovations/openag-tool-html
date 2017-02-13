@@ -1,0 +1,27 @@
+header {
+  background: url(../../images/pattern-bg-1.svg) repeat-x top left,url(../../images/pattern-bg-2.svg) repeat-x bottom left;
+  background-color: #4AD4A1;
+  height: 380px;
+  position: relative;
+}
+
+.header__content {
+  color: $base-background;
+  font-size: 18px;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+.text--light {
+  color: rgba($base-background,0.7);
+}
+
+@media all and (min-width: 900px) {
+  .container {
+    width: 832px;
+  }
+}

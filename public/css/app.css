@@ -745,7 +745,7 @@ html, body {
 body {
   background-color: #fff;
   color: #073B4C;
-  font: normal small-caps normal 14px/22px Helvetica, sans-serif;
+  font: 500 14px/22px "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1065,6 +1065,30 @@ picture {
   max-width: 100%;
 }
 
+.navigation {
+  background: rgba(17, 138, 178, 0.8);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.navigation > ul > li {
+  float: left;
+}
+
+.navigation > ul > li > a {
+  display: block;
+  margin: 12px 30px 12px 0;
+  text-transform: uppercase;
+}
+
+.navigation > ul > li > a:hover, .navigation > ul > li > a.active {
+  color: #fff;
+  text-decoration: none;
+}
+
 table {
   border-collapse: collapse;
   table-layout: fixed;
@@ -1079,6 +1103,45 @@ tr,
 td,
 th {
   vertical-align: middle;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+@media all and (min-width: 500px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+header {
+  background: url(../../images/pattern-bg-1.svg) repeat-x top left, url(../../images/pattern-bg-2.svg) repeat-x bottom left;
+  background-color: #4AD4A1;
+  height: 380px;
+  position: relative;
+}
+
+.header__content {
+  color: #fff;
+  font-size: 18px;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.text--light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media all and (min-width: 900px) {
+  .container {
+    width: 832px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
