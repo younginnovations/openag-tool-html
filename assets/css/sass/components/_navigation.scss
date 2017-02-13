@@ -1,17 +1,21 @@
 .navigation {
-
+  background: rgba($link-color, 0.8);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
   > ul {
-
     > li {
-
+      float: left;
       > a {
-
-      }
-      &:hover {
-
-      }
-      &.active {
-
+        display: block;
+        margin: 12px 30px 12px 0;
+        text-transform: uppercase;
+        &:hover,&.active {
+          color: $base-background;
+          text-decoration: none;
+        }
       }
     }
   }
