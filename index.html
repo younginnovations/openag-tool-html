@@ -7,6 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>OPENAG TOOL</title>
+    <link rel="icon" href="public/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- Required CSS -->
     <link rel="stylesheet" href="./public/css/vendor.css">
@@ -20,13 +21,77 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+
 <main>
-    <div class="container">
-        <div w3-include-html="header.html"></div>
+    <div w3-include-html="header.html"></div>
+    <section>
+        <div class="container form__container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+            <span class="input input--hoshi">
+            <input class="input__field input__field--hoshi" type="search" id="search"/>
+            <label class="input__label input__label--hoshi" for="search">
+            <span class="input__label-content input__label-content--hoshi">Search for organization...</span>
+            </label>
+            </span>
+                    <!--<input type="search" placeholder="Search for organization ...">-->
+                </div>
+                <div class="col-xs-12 col-md-3">
+            <span class="input input--hoshi select--hoshi" id="selectHoshi">
+                <select class="cs-select cs-skin-underline">
+                    <option value="">Sectors</option>
+                <option value="">Agricultural policy and administrative management</option>
+                <option value="">Agricultural development</option>
+                <option value="">Agricultural land resources</option>
+                <option value="">Agricultural water resources</option>
+                </select>
+                <!--<input class="input__field input__field&#45;&#45;hoshi" type="text" id="input-4"/>-->
+            <label class="input__label input__label--hoshi">
+            <span class="input__label-content input__label-content--hoshi">Sectors</span>
+            </label>
+            </span>
+                    <!--<select>-->
+                    <!--<option value="">Agricultural policy and administrative management</option>-->
+                    <!--<option value="">Agricultural development</option>-->
+                    <!--<option value="">Agricultural land resources</option>-->
+                    <!--<option value="">Agricultural water resources</option>-->
+                    <!--</select>-->
+                </div>
+                <div class="col-xs-12 col-md-3">
+            <span class="input input--hoshi">
+            <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+            <span class="input__label-content input__label-content--hoshi">Your name</span>
+            </label>
+            </span>
+                    <!--<select>-->
+                    <!--<option value="">Agricultural policy and administrative management</option>-->
+                    <!--<option value="">Agricultural development</option>-->
+                    <!--<option value="">Agricultural land resources</option>-->
+                    <!--<option value="">Agricultural water resources</option>-->
+                    <!--</select>-->
+                </div>
+                <div class="col-xs-12 col-md-3">
+            <span class="input input--hoshi">
+            <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+            <span class="input__label-content input__label-content--hoshi">Your name</span>
+            </label>
+            </span>
+                    <!--<select>-->
+                    <!--<option value="">Agricultural policy and administrative management</option>-->
+                    <!--<option value="">Agricultural development</option>-->
+                    <!--<option value="">Agricultural land resources</option>-->
+                    <!--<option value="">Agricultural water resources</option>-->
+                    <!--</select>-->
+                </div>
+            </div>
+        </div>
         <div w3-include-html="table.html"></div>
         <div w3-include-html="input-box.html"></div>
-    </div>
+    </section>
 </main>
+
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="./public/js/vendor.js"></script>
@@ -34,6 +99,63 @@
 <script src="http://www.w3schools.com/lib/w3data.js"></script>
 <script>
     w3IncludeHTML();
+    $(document).ready(function () {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+            (function () {
+                // Make sure we trim BOM and NBSP
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function () {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+
+        [].slice.call(document.querySelectorAll('input.input__field,div.cs-select')).forEach(function (inputEl) {
+            // in case the input is already filled..
+            if (inputEl.value.trim() !== '') {
+                classie.add(inputEl.parentNode, 'input--filled');
+            }
+
+            // events:
+            inputEl.addEventListener('focus', onInputFocus);
+            inputEl.addEventListener('blur', onInputBlur);
+        });
+
+        function onInputFocus(ev) {
+            classie.add(ev.target.parentNode, 'input--filled');
+        }
+
+        function onInputBlur(ev) {
+            if (ev.target.value.trim() === '') {
+                classie.remove(ev.target.parentNode, 'input--filled');
+            }
+        }
+
+//        custom selectbox
+
+        [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
+            new SelectFx(el);
+        });
+
+        $(".cs-options li").click(function () {
+           $(".cs-placeholder").addClass('cs-placeholder-active');
+        });
+
+        $(".select--hoshi").click(function () {
+            $(this).addClass('select--hoshi--active');
+        });
+
+        $(document).click(function(e) {
+            if (e.target.id != 'selectHoshi' && !$('#selectHoshi').find(e.target).length) {
+                $("#selectHoshi").removeClass("select--hoshi--active");
+            }
+            if($(".cs-placeholder").hasClass("cs-placeholder-active")) {
+                $(".select--hoshi").addClass('select--hoshi--active');
+            }
+        });
+
+    });
 </script>
 </body>
 </html>
