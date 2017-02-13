@@ -9,7 +9,7 @@ elixir(function (mix) {
 
 
     mix.scripts([
-            './assets/js/vendor/jquery-1.8.0.min.js',
+            './assets/js/vendor/jquery-1.12.0.min.js',
             './assets/js/vendor/modernizr-2.8.3.min.js',
             './assets/js/vendor/bootstrap.min.js'
         ], './public/js/vendor.js');

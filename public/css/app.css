@@ -1095,6 +1095,20 @@ picture {
   text-decoration: none;
 }
 
+.navigation.affix {
+  background: #118ab2;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  left: 0;
+  right: 0;
+  max-width: 1110px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
 .table {
   border-collapse: collapse;
   table-layout: fixed;

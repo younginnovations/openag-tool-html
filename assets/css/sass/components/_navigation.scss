@@ -19,4 +19,16 @@
       }
     }
   }
+  &.affix {
+    background: rgba(17, 138, 178, 1);
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    transition: all 0.2s linear;
+    left: 0;
+    right: 0;
+    max-width: 1110px;
+    margin: 0 auto;
+    z-index: 1;
+  }
 }
