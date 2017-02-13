@@ -9,8 +9,10 @@ elixir(function (mix) {
 
 
     mix.scripts([
-            './assets/js/vendor/jquery-1.12.0.min.js',
+            './assets/js/vendor/jquery-3.1.1.min.js',
             './assets/js/vendor/modernizr-2.8.3.min.js',
+            './assets/js/vendor/classie.js',
+            './assets/js/vendor/selectFx.js',
             './assets/js/vendor/bootstrap.min.js'
         ], './public/js/vendor.js');
 });

@@ -1,7 +1,8 @@
 header {
-  background: url(../../images/pattern-bg-1.svg) repeat-x top left,url(../../images/pattern-bg-2.svg) repeat-x bottom left;
+  background: url(../../images/pattern-bg-1.svg) repeat-x top left, url(../../images/pattern-bg-2.svg) repeat-x bottom left;
   background-color: #4AD4A1;
   height: 380px;
+  margin-bottom: 62px;
   position: relative;
 
   h1 {
@@ -17,12 +18,12 @@ header {
   margin: 0 auto;
   position: absolute;
   top: 55%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
 .text--light {
-  color: rgba($base-background,0.7);
+  color: rgba($base-background, 0.7);
 }
 
 @media only screen and (min-width: 500px) {
@@ -31,5 +32,11 @@ header {
       font-size: 50px;
       line-height: 58px;
     }
+  }
+}
+
+@media all and (min-width: 900px) {
+  .header__content {
+    width: 832px;
   }
 }

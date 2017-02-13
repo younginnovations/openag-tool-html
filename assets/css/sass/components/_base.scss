@@ -11,7 +11,7 @@ html, body {
 body {
   background-color: $base-background;
   color: $base-color;
-  font: normal 14px/22px $base-font-family;
+  font: 500 14px/22px $base-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,5 +21,15 @@ p {
     color: #4a4a4a;
     font-size: 24px;
     text-align: center;
+  }
+}
+
+.text--light {
+  color: rgba($base-background,0.7);
+}
+
+@media all and (min-width: 900px) {
+  .container {
+    width: 832px;
   }
 }
