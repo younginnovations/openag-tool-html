@@ -1567,9 +1567,10 @@ picture {
   text-transform: uppercase;
 }
 
-.navigation ul > li > a:hover, .navigation ul > li > a.active {
+.navigation ul > li > a:hover, .navigation ul > li > a.active, .navigation ul > li > a:focus {
   color: #fff;
   text-decoration: none;
+  outline: 0;
 }
 
 .navigation.affix {

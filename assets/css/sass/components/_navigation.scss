@@ -12,9 +12,10 @@
         display: block;
         margin: 12px 30px 12px 0;
         text-transform: uppercase;
-        &:hover,&.active {
+        &:hover,&.active,&:focus {
           color: $base-background;
           text-decoration: none;
+          outline: 0;
         }
       }
     }
