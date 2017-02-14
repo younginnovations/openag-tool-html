@@ -3,5 +3,8 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "laravel-elixir": "^6.0.0-2"
+  },
+  "devDependencies": {
+    "laravel-elixir-browserify-official": "^0.1.3"
   }
 }

@@ -2,7 +2,7 @@ header {
   background: url(../../images/pattern-bg-1.svg) repeat-x top left, url(../../images/pattern-bg-2.svg) repeat-x bottom left;
   background-color: #4AD4A1;
   height: 380px;
-  margin-bottom: 62px;
+  margin-bottom: 44px;
   position: relative;
 
   h1 {
@@ -24,6 +24,14 @@ header {
 
 .text--light {
   color: rgba($base-background, 0.7);
+}
+
+.logo-name {
+  color: $base-background;
+  display: none;
+  font-size: 20px;
+  float: left;
+  margin: 12px 43px 12px 0;
 }
 
 @media only screen and (min-width: 500px) {

@@ -8,7 +8,8 @@ elixir(function (mix) {
         ], './public/css/vendor.css');
 
 
-    mix.scripts([
+    mix.browserify('./assets/js/app.js', 'public/js')
+        .scripts([
             './assets/js/vendor/jquery-3.1.1.min.js',
             './assets/js/vendor/modernizr-2.8.3.min.js',
             './assets/js/vendor/classie.js',
@@ -16,3 +17,6 @@ elixir(function (mix) {
             './assets/js/vendor/bootstrap.min.js'
         ], './public/js/vendor.js');
 });
+
+
+
