@@ -23,72 +23,291 @@
 
 
 <main>
-    <div w3-include-html="header.html"></div>
+    <header>
+        <div class="container header__content">
+            <span class="text--light">Improving implementing organizations’ information in IATI</span>
+            <h1>Organizations explorer</h1>
+        </div>
+        <nav class="navigation" data-spy="affix" data-offset-top="334">
+            <div class="container">
+                <div class="logo-name">Organizations Explorer</div>
+                <ul>
+                    <li><a href="#" class="text--light active">Home</a></li>
+                    <li><a href="#" class="text--light">Implementing Organizations</a></li>
+                    <li><a href="#" class="text--light">Publishers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section>
-        <div class="container form__container">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-3">
-            <span class="input input--hoshi">
-            <input class="input__field input__field--hoshi" type="search" id="search"/>
-            <label class="input__label input__label--hoshi" for="search">
-            <span class="input__label-content input__label-content--hoshi">Search for organization...</span>
-            </label>
-            </span>
-                    <!--<input type="search" placeholder="Search for organization ...">-->
+                <div class="col-xs-12 col-md-3 form__search">
+                    <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="search" id="search"/>
+                    <label class="input__label input__label--hoshi" for="search">
+                    <span class="input__label-content input__label-content--hoshi">Search for organization...</span>
+                    </label>
+                    </span>
                 </div>
                 <div class="col-xs-12 col-md-3">
-            <span class="input input--hoshi select--hoshi" id="selectHoshi">
-                <select class="cs-select cs-skin-underline">
-                    <option value="">Sectors</option>
-                <option value="">Agricultural policy and administrative management</option>
-                <option value="">Agricultural development</option>
-                <option value="">Agricultural land resources</option>
-                <option value="">Agricultural water resources</option>
-                </select>
-                <!--<input class="input__field input__field&#45;&#45;hoshi" type="text" id="input-4"/>-->
-            <label class="input__label input__label--hoshi">
-            <span class="input__label-content input__label-content--hoshi">Sectors</span>
-            </label>
-            </span>
-                    <!--<select>-->
-                    <!--<option value="">Agricultural policy and administrative management</option>-->
-                    <!--<option value="">Agricultural development</option>-->
-                    <!--<option value="">Agricultural land resources</option>-->
-                    <!--<option value="">Agricultural water resources</option>-->
-                    <!--</select>-->
+                    <span class="input input--hoshi select--hoshi" id="selectHoshi1">
+                        <select class="cs-select cs-skin-underline">
+                        <option value="">Agricultural policy and administrative management</option>
+                        <option value="">Agricultural development</option>
+                        <option value="">Agricultural land resources</option>
+                        <option value="">Agricultural water resources</option>
+                        </select>
+                    <label class="input__label input__label--hoshi">
+                    <span class="input__label-content input__label-content--hoshi">Sectors</span>
+                    </label>
+                    </span>
                 </div>
                 <div class="col-xs-12 col-md-3">
-            <span class="input input--hoshi">
-            <input class="input__field input__field--hoshi" type="text" id="input-4"/>
-            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-            <span class="input__label-content input__label-content--hoshi">Your name</span>
-            </label>
-            </span>
-                    <!--<select>-->
-                    <!--<option value="">Agricultural policy and administrative management</option>-->
-                    <!--<option value="">Agricultural development</option>-->
-                    <!--<option value="">Agricultural land resources</option>-->
-                    <!--<option value="">Agricultural water resources</option>-->
-                    <!--</select>-->
+                    <span class="input input--hoshi select--hoshi" id="selectHoshi2">
+                        <select class="cs-select cs-skin-underline">
+                        <option value="">Country 1</option>
+                        <option value="">Country 2</option>
+                        <option value="">Country 3</option>
+                        <option value="">Country 4</option>
+                        </select>
+                    <label class="input__label input__label--hoshi">
+                    <span class="input__label-content input__label-content--hoshi">Country</span>
+                    </label>
+                    </span>
                 </div>
                 <div class="col-xs-12 col-md-3">
-            <span class="input input--hoshi">
-            <input class="input__field input__field--hoshi" type="text" id="input-4"/>
-            <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-            <span class="input__label-content input__label-content--hoshi">Your name</span>
-            </label>
-            </span>
-                    <!--<select>-->
-                    <!--<option value="">Agricultural policy and administrative management</option>-->
-                    <!--<option value="">Agricultural development</option>-->
-                    <!--<option value="">Agricultural land resources</option>-->
-                    <!--<option value="">Agricultural water resources</option>-->
-                    <!--</select>-->
+                    <span class="input input--hoshi select--hoshi" id="selectHoshi3">
+                        <select class="cs-select cs-skin-underline">
+                        <option value="">Sub-country location 1</option>
+                        <option value="">Sub-country location 2</option>
+                        <option value="">Sub-country location 3</option>
+                        <option value="">Sub-country location 4</option>
+                        </select>
+                    <label class="input__label input__label--hoshi">
+                    <span class="input__label-content input__label-content--hoshi">Sub-country location</span>
+                    </label>
+                    </span>
+                </div>
+                <span class="more-filter">more filters</span>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="advanced-search">Advanced search</div>
                 </div>
             </div>
         </div>
-        <div w3-include-html="table.html"></div>
-        <div w3-include-html="input-box.html"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-9">
+                    <div class="table-wrap table-fixed scrolling outer">
+                        <div class="inner">
+                            <table class="table table-striped table-hover table-condensed">
+                                <thead>
+                                <tr class="table-header">
+                                    <th>Publishers</th>
+                                    <td>2017</td>
+                                    <td>2016</td>
+                                    <td>2015</td>
+                                    <td>2014</td>
+                                    <td>2013</td>
+                                    <td>2012</td>
+                                    <td>2011</td>
+                                    <td>2010</td>
+                                    <td>2009</td>
+                                    <td>2008</td>
+                                    <td>2007</td>
+                                    <td>2006</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th>ACTED</th>
+                                    <td><span><span>1</span></span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ADRA - UK</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ARK (Absolute Return for Kids)</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ANDA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>AWEPA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ARK (Absolute Return for Kids)</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ANDA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>AWEPA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>AWEPA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ARK (Absolute Return for Kids)</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>ANDA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                <tr>
+                                    <th>AWEPA</th>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                    <td><span>1</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
@@ -96,66 +315,5 @@
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="./public/js/vendor.js"></script>
 <script src="./public/js/app.js"></script>
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
-<script>
-    w3IncludeHTML();
-    $(document).ready(function () {
-        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-        if (!String.prototype.trim) {
-            (function () {
-                // Make sure we trim BOM and NBSP
-                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-                String.prototype.trim = function () {
-                    return this.replace(rtrim, '');
-                };
-            })();
-        }
-
-        [].slice.call(document.querySelectorAll('input.input__field,div.cs-select')).forEach(function (inputEl) {
-            // in case the input is already filled..
-            if (inputEl.value.trim() !== '') {
-                classie.add(inputEl.parentNode, 'input--filled');
-            }
-
-            // events:
-            inputEl.addEventListener('focus', onInputFocus);
-            inputEl.addEventListener('blur', onInputBlur);
-        });
-
-        function onInputFocus(ev) {
-            classie.add(ev.target.parentNode, 'input--filled');
-        }
-
-        function onInputBlur(ev) {
-            if (ev.target.value.trim() === '') {
-                classie.remove(ev.target.parentNode, 'input--filled');
-            }
-        }
-
-//        custom selectbox
-
-        [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
-            new SelectFx(el);
-        });
-
-        $(".cs-options li").click(function () {
-           $(".cs-placeholder").addClass('cs-placeholder-active');
-        });
-
-        $(".select--hoshi").click(function () {
-            $(this).addClass('select--hoshi--active');
-        });
-
-        $(document).click(function(e) {
-            if (e.target.id != 'selectHoshi' && !$('#selectHoshi').find(e.target).length) {
-                $("#selectHoshi").removeClass("select--hoshi--active");
-            }
-            if($(".cs-placeholder").hasClass("cs-placeholder-active")) {
-                $(".select--hoshi").addClass('select--hoshi--active');
-            }
-        });
-
-    });
-</script>
 </body>
 </html>
