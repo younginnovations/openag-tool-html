@@ -760,6 +760,36 @@ p.main-heading {
   color: rgba(255, 255, 255, 0.7);
 }
 
+p {
+  color: #004C5E;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+a {
+  color: #118AB2;
+}
+
+.publishers-row > p {
+  padding-left: 30px;
+  position: relative;
+}
+
+.publishers-row > p:before {
+  background: url(../../images/iati-logo.png) no-repeat 0 0;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.switch-wrapper em {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 @media all and (min-width: 900px) {
   .container {
     width: 832px;
@@ -1488,7 +1518,8 @@ div.cs-active {
   color: #009BC2;
   cursor: pointer;
   font-size: 12px;
-  padding: 0 15px;
+  padding-right: 15px;
+  margin: 0 15px;
   position: relative;
 }
 
@@ -1588,6 +1619,11 @@ picture {
 
 .navigation.affix .logo-name {
   display: block;
+}
+
+.inner-page-header .navigation {
+  position: static;
+  background: #118AB2;
 }
 
 .table {
@@ -1863,6 +1899,16 @@ header {
 header h1 {
   font-size: 40px;
   line-height: 48px;
+}
+
+header h2 {
+  font-size: 32px;
+  margin: 10px 0 0;
+}
+
+.inner-page-header {
+  height: 162px;
+  background: #4AD4A1 url(../../images/pattern-bg-3.svg) no-repeat 0 0/cover !important;
 }
 
 .header__content {

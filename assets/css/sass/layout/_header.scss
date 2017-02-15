@@ -9,6 +9,16 @@ header {
     font-size: 40px;
     line-height: 48px;
   }
+
+  h2 {
+    font-size: 32px;
+    margin: 10px 0 0;
+  }
+}
+
+.inner-page-header {
+  height: 162px;
+  background: #4AD4A1 url(../../images/pattern-bg-3.svg) no-repeat 0 0/cover!important;
 }
 
 .header__content {
