@@ -785,98 +785,6 @@ a {
   height: 20px;
 }
 
-.switch-wrapper em {
-  float: left;
-  font-size: 12px;
-  font-weight: 400;
-  margin: 8px 0 0 12px;
-}
-
-.switch {
-  background: #F0F4F5;
-  border-radius: 21px;
-  font-weight: 400;
-  float: left;
-  line-height: 38px;
-  width: 240px;
-}
-
-.switch > span {
-  font-size: 12px;
-  position: relative;
-}
-
-.switch > span:after {
-  background: url(../../images/ic_flag.svg) no-repeat 0 0;
-  content: "";
-  height: 10px;
-  right: -12px;
-  position: absolute;
-  top: 2px;
-  width: 10px;
-}
-
-.TriSea-technologies-Switch {
-  float: left;
-  margin: 17px 4px 0px 12px;
-}
-
-.TriSea-technologies-Switch > input[type="checkbox"] {
-  display: none;
-}
-
-.TriSea-technologies-Switch > label {
-  background: #EF476F;
-  cursor: pointer;
-  height: 0px;
-  position: relative;
-  width: 40px;
-}
-
-.TriSea-technologies-Switch > label > span {
-  color: #fff;
-  font-size: 10px;
-  font-weight: 400;
-  float: right;
-  margin: -17px 8px 0 0;
-  position: relative;
-}
-
-.TriSea-technologies-Switch > label > span.off {
-  margin-right: 4px;
-}
-
-.TriSea-technologies-Switch > label::before {
-  background: #EF476F;
-  border-radius: 10px;
-  content: '';
-  height: 20px;
-  margin-top: -8px;
-  position: absolute;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  width: 38px;
-}
-
-.TriSea-technologies-Switch > label::after {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  content: '';
-  height: 16px;
-  left: 2px;
-  margin-top: -8px;
-  position: absolute;
-  top: 2px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 16px;
-}
-
-.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
-  left: 20px;
-}
-
 @media all and (min-width: 900px) {
   .container {
     width: 832px;
@@ -2033,6 +1941,97 @@ header h2 {
   .header__content {
     width: 832px;
   }
+}
+
+.switch-wrapper em {
+  float: left;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 8px 0 0 12px;
+}
+
+.switch {
+  background: #F0F4F5;
+  border-radius: 21px;
+  font-weight: 400;
+  float: left;
+  line-height: 38px;
+  width: 240px;
+}
+
+.switch > span {
+  font-size: 12px;
+  position: relative;
+}
+
+.switch > span:after {
+  background: url(../../images/ic_flag.svg) no-repeat 0 0;
+  content: "";
+  height: 10px;
+  right: -12px;
+  position: absolute;
+  top: 2px;
+  width: 10px;
+}
+
+.TriSea-technologies-Switch {
+  float: left;
+  margin: 17px 4px 0px 12px;
+}
+
+.TriSea-technologies-Switch > input[type="checkbox"] {
+  display: none;
+}
+
+.TriSea-technologies-Switch > label {
+  cursor: pointer;
+  height: 0px;
+  position: relative;
+  width: 40px;
+}
+
+.TriSea-technologies-Switch > label > span {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  float: right;
+  margin: -17px 8px 0 0;
+  position: relative;
+}
+
+.TriSea-technologies-Switch > label > span.off {
+  margin-right: 4px;
+}
+
+.TriSea-technologies-Switch > label::before {
+  background: green;
+  border-radius: 10px;
+  content: '';
+  height: 20px;
+  margin-top: -8px;
+  position: absolute;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 38px;
+}
+
+.TriSea-technologies-Switch > label::after {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 16px;
+  left: 2px;
+  margin-top: -8px;
+  position: absolute;
+  top: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 16px;
+}
+
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
+  left: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */
