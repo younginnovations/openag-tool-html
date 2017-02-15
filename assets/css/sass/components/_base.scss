@@ -28,6 +28,37 @@ p {
   color: rgba($base-background,0.7);
 }
 
+p {
+  color: #004C5E;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+a {
+  color: #118AB2;
+}
+
+.publishers-row > p {
+  padding-left: 30px;
+  position: relative;
+  &:before {
+    background: url(../../images/iati-logo.png) no-repeat 0 0;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.switch-wrapper {
+  em {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
 @media all and (min-width: 900px) {
   .container {
     width: 832px;

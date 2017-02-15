@@ -483,7 +483,8 @@ div.cs-active {
   color: #009BC2;
   cursor: pointer;
   font-size: 12px;
-  padding: 0 15px;
+  padding-right: 15px;
+  margin: 0 15px;
   position: relative;
   &:after {
     content: '';
